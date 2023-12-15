@@ -1,0 +1,12 @@
+.bodyBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap: 100px;
+    margin-top: 250px;
+    .textBox{
+      text-align: left;
+    }
+}
