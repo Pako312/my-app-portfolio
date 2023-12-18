@@ -1,0 +1,19 @@
+@import './../../assets/styles/lightTheme.scss';
+
+.chip-wrap {
+    display: inline-block;
+    border: 1px solid $border;
+    color: $tertiary-text;
+    font-size: 13px;
+    border-radius: 20px;
+    padding: 5px 15px;
+    cursor: pointer;
+    transition-duration: .15s;
+    user-select: none;
+    &.active {
+        background-color: $accent;
+    }
+    &:hover {
+        background-color: $main-hover;
+    }
+}

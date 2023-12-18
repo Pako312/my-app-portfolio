@@ -2,7 +2,7 @@ import React from 'react'
 import style from './style.module.scss'
 import sass from '../assets/img/sass.png'
 
-const Home = () => {
+export const Home = () => {
   return (
     <div className={style.bodyBox}>
       <div className={style.textBox}>
@@ -21,4 +21,3 @@ const Home = () => {
   )
 }
 
-export default Home;

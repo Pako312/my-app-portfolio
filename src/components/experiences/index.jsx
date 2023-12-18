@@ -4,7 +4,7 @@ export const Experiences = () => {
   return (
     <div>
         <div>
-            Privet
+            Experiences
         </div>
 
     </div>

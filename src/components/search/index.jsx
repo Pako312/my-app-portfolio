@@ -1,7 +1,10 @@
-import React from 'react'
+import React from "react";
+import SearchBar from "../../components/searchBar";
 
 export const Search = () => {
   return (
-    <div>Search</div>
-  )
-}
+    <div>
+      <SearchBar title="Search" />
+    </div>
+  );
+};

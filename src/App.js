@@ -1,14 +1,16 @@
 import style from './style.module.scss';
 import edu from './components/assets/img/Без названия (1).svg'
-
-import Home from './components/home';
-import { Routes, Route, Link } from 'react-router-dom';
+import { Home } from './components/home';
+import { Routes, Route, Link, Navigate } from 'react-router-dom';
 import { Skills } from './components/skills';
 import { Projects } from './components/projects';
 import { Experiences } from './components/experiences';
 import { Education } from './components/education';
 import { Resume } from './components/resume';
 import { Search } from './components/search';
+import { DetailSkill } from './components/skills/detail';
+import DetailProject from './components/projects/detail';
+import DetailExperience from './components/experiences/detail';
 
 function App() {
   return (
@@ -44,7 +46,6 @@ function App() {
             Search
           </Link>
         </div>
-
       </div>
       <div className={style.container}>
         {/* <Home /> */}
@@ -54,13 +55,24 @@ function App() {
 
       </h1>
       <Routes>
+        <Route path={'*'} element={<Navigate to="/" replace />} />
         <Route path={"/"} element={<Home />} />
-        <Route path={'/skills'} element={<Skills />} />
-        <Route path={'/projects'} element={<Projects />} />
-        <Route path={'/experiences'} element={<Experiences />} />
+        <Route path={'/skills'}>
+          <Route path={'/skills'} element={<Skills />} />
+          <Route index element={<Skills />} />
+        </Route>
+        <Route path={':slug'} element={<DetailSkill />} />
+        <Route path={'/projects'}>
+          <Route index element={<Projects />} />
+          <Route path={':slug'} element={<DetailProject />} />
+        </Route>
+        <Route path={"/experiences"}>
+          <Route index element={<Experiences />} />
+          <Route path={':slug'} element={<DetailExperience />} />
+        </Route>
         <Route path={'/education'} element={<Education />} />
         <Route path={'/resume'} element={<Resume />} />
-        <Route path={'/search'} element={<Search />}/>
+        <Route path={'/search'} element={<Search />} />
       </Routes>
 
 
