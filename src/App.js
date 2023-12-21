@@ -11,49 +11,16 @@ import { Search } from './components/search';
 import { DetailSkill } from './components/skills/detail';
 import DetailProject from './components/projects/detail';
 import DetailExperience from './components/experiences/detail';
+import NavBar from './components/navbar';
 
 function App() {
   return (
     <div>
-
-      <div className={style.navBar}>
-        <div className={style.navItm_name}>
-          <Link to={'/'}> Name LASTNAME</Link>
+      <header className={style['navBar']}>
+        <div className={style.container}>
+          <NavBar />
         </div>
-        <div className={style.navItm}>
-          <Link to={'/skills'}>Skills</Link>
-        </div>
-        <div className={style.navItm}>
-          <Link to={'/projects'}>
-            Projects
-          </Link>
-        </div>
-        <div className={style.navItm}>
-          <Link to={'/experiences'}>Experiences</Link>
-        </div>
-        <div className={style.navItm}>
-          <Link to={'/education'}>
-            Education
-          </Link>
-        </div>
-        <div className={style.navItm}>
-          <Link to={'/resume'}>
-            Resume
-          </Link>
-        </div>
-        <div className={style.navItm}>
-          <Link to={'/search'}>
-            Search
-          </Link>
-        </div>
-      </div>
-      <div className={style.container}>
-        {/* <Home /> */}
-      </div>
-
-      <h1 className={style.header}>
-
-      </h1>
+      </header>
       <Routes>
         <Route path={'*'} element={<Navigate to="/" replace />} />
         <Route path={"/"} element={<Home />} />

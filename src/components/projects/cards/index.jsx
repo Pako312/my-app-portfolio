@@ -2,6 +2,8 @@ import React from 'react'
 import styles from './style.module.scss'
 import BoxLayout from '../../box-layout';
 import Chip from '../chip';
+import CardLink from '../../cardLink';
+import gitLink from '..//..//assets/img/GitLink.svg'
 
 
 const ProjectCard = (props) => {
@@ -11,7 +13,9 @@ const ProjectCard = (props) => {
         icon,
         icon2,
         text,
+        to,
     } = props
+    console.log(props, 'test');
     return (
         <BoxLayout className={styles['slickBox']}>
             <div className={styles['imgBox']}>
@@ -19,11 +23,11 @@ const ProjectCard = (props) => {
             </div>
             <div className={styles['titleBox']}>
                 <h2>{title}</h2>
-                <a className={styles['gitLink']} href="#">
-                    <BoxLayout className={styles['boxLayout']}>
-                        <img className={styles['gitLinkIcon']} src={icon}></img>
-                    </BoxLayout>
-                </a>
+                <CardLink
+                label='github' 
+                to={'https://github.com/Pako312?tab=repositories'}
+                // img={gitLink} 
+                />
             </div>
             <div className={styles['borderLine']}>
             </div>
@@ -44,6 +48,7 @@ const ProjectCard = (props) => {
             </div>
             <div className={styles['borderLine']}>
             </div>
+            {/* <CardLink /> */}
             <a className={styles['gitLink']} href="#">
                 <BoxLayout className={styles['boxLayout']}>
                     <img className={styles['tsLinkIcon']} src={icon2}></img>

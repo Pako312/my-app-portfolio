@@ -1,10 +1,11 @@
 import React from 'react'
+import SearchBar from '../searchBar'
 
 export const Experiences = () => {
   return (
     <div>
         <div>
-            Experiences
+            <SearchBar title='Education'/>
         </div>
 
     </div>

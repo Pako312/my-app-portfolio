@@ -10,9 +10,11 @@
         padding: 10px 20px;
         transition-duration: .25s;
         outline: unset;
+        background-color: $dark-0;
+       
         &:focus {
             border: 1px solid $border-hover;
-            background-color: $main-hover;
+            background-color: $dark-2;
         }
 
     }
