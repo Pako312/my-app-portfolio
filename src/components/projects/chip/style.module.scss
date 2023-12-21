@@ -10,10 +10,13 @@
     cursor: pointer;
     transition-duration: .15s;
     user-select: none;
+    color:$light-2;
     &.active {
-        background-color: $accent;
+        background-color: transparent;
     }
     &:hover {
-        background-color: $main-hover;
+        background-color: $main-60;
     }
+
+
 }

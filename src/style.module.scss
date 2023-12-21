@@ -15,22 +15,20 @@
   line-height: 20px;
   display: flex;
   justify-content: space-around;
+  a {
+    text-decoration: none;
+    color: #d1d1d1;
+  }
 
   .navItm_name {
     font-weight: 700;
     padding: 10px 20px;
-    a {
-      text-decoration: none;
-    }
+    
   }
 
   .navItm {
     padding: 10px 20px;
     font-weight: 400;
-
-    a {
-      text-decoration: none;
-    }
   }
 
   .navItm:hover,
@@ -53,7 +51,6 @@ link:link:visited {
   text-decoration: none;
  
 }
-
 
 .bodyBox {
   display: flex;

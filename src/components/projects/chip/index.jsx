@@ -1,13 +1,13 @@
 import {clsx} from "clsx";
 import React from "react";
-import styles from "./style.module.scss"
+import styles from "./style.module.scss";
 
 const Chip = (props) => {
     const {
         label,
         isActive,
         onClick,
-        className
+        className,
     } = props
     const classes = clsx(
         styles['chip-wrap'],
@@ -17,7 +17,7 @@ const Chip = (props) => {
 
         });
     return (
-        <div className={classes}>
+        <div className={classes} onClick={onClick}>
           <span className={styles["label"]}>{label}</span>
         </div>
       );

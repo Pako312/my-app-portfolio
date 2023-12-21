@@ -1,0 +1,54 @@
+@import "..//..//box-layout/style.module.scss";
+
+
+.sliderWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .sliderNavButton {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 25px;
+        height: 25px;
+        border: 1px solid $border;
+        background-color: transparent;
+        border-radius: 50%;
+        color: white;
+
+        &:hover {
+            border: 1px solid $border-hover;
+        }
+
+        &.right {
+            transform: rotate(180deg);
+        }
+    }
+
+    .slider {
+        width: 200px;
+
+        &__item {
+            .image-wrap {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 150px;
+                height: 150px;
+                margin: 0 25px;
+
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+
+        }
+    }
+
+}

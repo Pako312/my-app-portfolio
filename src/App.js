@@ -57,9 +57,9 @@ function App() {
       <Routes>
         <Route path={'*'} element={<Navigate to="/" replace />} />
         <Route path={"/"} element={<Home />} />
-        <Route path={'/skills'}>
-          <Route path={'/skills'} element={<Skills />} />
+        <Route path={'/skills/'}>
           <Route index element={<Skills />} />
+          <Route path={':slug'} element={<DetailSkill />} />
         </Route>
         <Route path={':slug'} element={<DetailSkill />} />
         <Route path={'/projects'}>

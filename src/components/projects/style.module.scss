@@ -1,3 +1,21 @@
-.text{
-    color:white;
+@import "../assets/styles/common.module.scss";
+
+.projectBox {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .chipBox{
+        display: flex;
+        gap: 5px;
+    }
+    .prjCards{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap:20px;
+    }
+
+}
+
+.text {
+    color: white;
 }

@@ -1,0 +1,81 @@
+@import '//src/components/assets/styles/lightTheme.scss';
+
+.slickBox {
+    border: 1px solid white;
+    padding: 25px;
+    border-radius: 15px;
+    width: 370px;
+    max-height: 550px;
+
+    .slickBoxImg {
+        max-width: 40px;
+        max-height: 40px;
+    }
+}
+.titleBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+
+}
+.gitLink {
+    display: block;
+    
+
+    .boxLayout {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 28px;
+        height: 28px;
+        padding: 5px;
+        border-radius: 10px;
+        margin: 0 2.5px;
+
+        .gitLinkIcon {
+            background-color: white;
+            color: white;
+            width: 16px;
+            height: 16px;
+        }
+        .tsLinkIcon{
+            width: 15px;
+            height: 15px;
+            
+        }
+    }
+}
+.borderLine{
+    border-bottom: 1px solid #2e2e2e;
+    margin: 10px 0;
+}
+.italicText{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+        span{
+            display: block;
+            font-style: italic;
+            color: #e1e1e1;
+            font-weight: 300;
+            font-size: .9em;
+        }
+}
+
+.slickText{
+    height: 130px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 0.95rem;
+    font-weight: 300;
+}
+
+.dateBox{
+    display: flex;
+    justify-content: space-between;
+    .date{
+        font-size: .9em;
+        font-weight: 300;
+    }
+}

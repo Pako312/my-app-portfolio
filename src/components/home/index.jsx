@@ -1,6 +1,8 @@
 import React from 'react'
 import style from './style.module.scss'
 import sass from '../assets/img/sass.png'
+import SkillsSlider from './skillsSlider'
+import { ReactComponent as ArrowIcon } from '..///assets/img/strelka.svg'
 
 export const Home = () => {
   return (
@@ -14,9 +16,11 @@ export const Home = () => {
           It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
           and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
       </div>
-      <div className={style.iconsBox}>
+      
+      {/* <div className={style.iconsBox}>
         <img className={style.iconItm} src={sass}></img>
-      </div>
+      </div> */}
+      <SkillsSlider className={style.slider} />
     </div>
   )
 }

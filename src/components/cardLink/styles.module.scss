@@ -1,0 +1,29 @@
+@import '..//assets/styles/lightTheme.scss';
+
+
+.card-link {
+    display: block;
+    border: 1px solid $border;
+    width: 28px;
+    height: 28px;
+    padding: 5px;
+    border-radius: 10px;
+    &:hover{
+        border: 1px  solid $border-hover;
+    }
+    &:before {
+        content: attr(data-label);
+        position: absolute;
+        width: max-content;
+        background-color: $secondary;
+        padding: 5px 10px;
+        right: 40%;
+        top: calc(100% + 5px);
+        border: 1px solid var(--border);
+        border-radius: 15px;
+        z-index: 10;
+    }
+
+
+
+}

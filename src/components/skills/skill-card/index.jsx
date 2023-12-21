@@ -1,14 +1,20 @@
 import React from 'react'
 import BoxLayout from '..//..//box-layout'
 import styles from './style.module.scss'
-import jsLogo from '..//..//assets/images/js-logo.png'
 
-const SkillCard = () => {
+const SkillCard = (props) => {
+    const {
+        label,
+        img
+    } = props;
+
     return (
         <BoxLayout className={styles["skill-card"]}>
-            <h3 className={styles["title"]}>Javascript</h3>
+            <h3 className={styles["title"]}>
+                {label}
+            </h3>
             <div className={styles["image-wrap"]}>
-                <img src={jsLogo} alt="Skill logo" />
+                <img className={styles['image']} src={img} alt="Skill logo" />
             </div>
         </BoxLayout>
     );
