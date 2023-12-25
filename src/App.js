@@ -31,7 +31,7 @@ function App() {
         <Route path={':slug'} element={<DetailSkill />} />
         <Route path={'/projects'}>
           <Route index element={<Projects />} />
-          <Route path={':slug'} element={<DetailProject />} />
+          <Route path={':id'} element={<DetailProject />} />
         </Route>
         <Route path={"/experiences"}>
           <Route index element={<Experiences />} />

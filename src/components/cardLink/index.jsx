@@ -13,11 +13,8 @@ const CardLink = (props) => {
         <div>
             <a href={to} className={styles['card-link']} data-label={label}>
                 <i className={styles['link-icon']}></i>
-
                 <LinkIcon />
-                {/* <img src={img} className={styles['imgLink']}></img> */}
             </a>
-
         </div>
     )
 }

@@ -1,9 +1,30 @@
-.detailPageWrap{
-    .title{
+@import '..//..//assets/styles/lightTheme.scss';
+@import '..//..//assets/styles/common.module.scss';
+
+.detail-page-wrap {
+    
+    .title {
         padding: 127px 0;
         font-size: 64px;
         text-align: center;
         font-weight: 900;
-        
+        border-bottom: 1px solid $border;
+    }
+
+    .description {
+        padding: 25px 0;
+        border-bottom: 1px solid $border;
+    }
+
+    .chips-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 16px;
+        margin-left: 8px;
+    }
+
+    .chip {
+        margin-right: 5px;
+        margin-top: 5px;
     }
 }

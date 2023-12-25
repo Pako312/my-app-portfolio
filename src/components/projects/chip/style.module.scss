@@ -1,7 +1,8 @@
 @import './../../assets/styles/lightTheme.scss';
 
 .chip-wrap {
-    display: inline-block;
+    display: block;
+    width: max-content;
     border: 1px solid $border;
     color: $tertiary-text;
     font-size: 13px;
@@ -10,13 +11,32 @@
     cursor: pointer;
     transition-duration: .15s;
     user-select: none;
-    color:$light-2;
+    color: $light-2;
+
+    .icon-wrap {
+        width: 15px;
+        height: 15px;
+        margin-right: 8px;
+        img{
+            display: block;
+            width:100%;
+            height:100%;
+            object-fit: contain;
+        }
+    }
+
     &.active {
         background-color: transparent;
     }
+
     &:hover {
         background-color: $main-60;
     }
 
 
+}
+
+.label{
+    display: flex;
+    text-decoration: none;
 }

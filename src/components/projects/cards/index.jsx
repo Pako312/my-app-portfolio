@@ -4,6 +4,9 @@ import BoxLayout from '../../box-layout';
 import Chip from '../chip';
 import CardLink from '../../cardLink';
 import gitLink from '..//..//assets/img/GitLink.svg'
+import ChipItm from '../../chipIcon';
+import tsLogo from '..//..//assets/images/ts-logo.png'
+
 
 
 const ProjectCard = (props) => {
@@ -14,20 +17,24 @@ const ProjectCard = (props) => {
         icon2,
         text,
         to,
+        project
     } = props
     console.log(props, 'test');
     return (
         <BoxLayout className={styles['slickBox']}>
             <div className={styles['imgBox']}>
-                <img className={styles['slickBoxImg']} src={image}></img>
+                <img className={styles['slickBoxImg']} src={project.icon}></img>
             </div>
             <div className={styles['titleBox']}>
-                <h2>{title}</h2>
-                <CardLink
-                label='github' 
-                to={'https://github.com/Pako312?tab=repositories'}
-                // img={gitLink} 
-                />
+                <h2>{project.name}</h2>
+
+                {project.links.map(link => (
+                    <CardLink
+                        label={link.label}
+                        to={link.link}
+
+                    />))}
+
             </div>
             <div className={styles['borderLine']}>
             </div>
@@ -36,7 +43,7 @@ const ProjectCard = (props) => {
                 <span>1 day</span>
             </div>
             <div className={styles['slickText']}>
-                {text}
+                {project.description}
             </div>
             <div className={styles['dateBox']}>
                 <Chip
@@ -48,12 +55,16 @@ const ProjectCard = (props) => {
             </div>
             <div className={styles['borderLine']}>
             </div>
-            {/* <CardLink /> */}
-            <a className={styles['gitLink']} href="#">
-                <BoxLayout className={styles['boxLayout']}>
-                    <img className={styles['tsLinkIcon']} src={icon2}></img>
-                </BoxLayout>
-            </a>
+            {project.skills.map((skill, idx) => {
+                return (
+                    <ChipItm
+                        key={idx}
+                        label={skill.label}
+                        to={`/skills/`}
+                        icon={skill.image}
+                />
+                )
+            })}
         </BoxLayout>
     )
 }

@@ -7,38 +7,34 @@ import projectImg from '../assets/img/no-img.svg'
 import gitLinkIcon from '../assets/img/GitLink.svg'
 import tsLogo from '../assets/images/ts-logo.png'
 import svelte from '../assets/images/svelte-logo.png'
+import jsIcon from '..//assets/images/js-logo.png'
+import { PROJECTS_DATA } from './detail/mock.data'
 
 export const Projects = () => {
+
     return (
         <div className={style.container}>
             <div className={style['projectBox']}>
                 <SearchBar title="Projects" />
                 <div className={style['chipBox']}>
-                    <Chip label="Typescript" />
+                    <Chip asLink={'/skills/ts'} label="Typescript"
+                        icon={jsIcon}
+                    />
                     <Chip label="Sass" />
                     <Chip label="Svelte" />
                 </div>
                 <div className={style['prjCards']}>
-                    <ProjectCard
-                        image={projectImg}
-                        title={'Slick Portfolio'}
-                        icon={gitLinkIcon}
-                        icon2={tsLogo}
-                        text="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi facilis eos consequatur similique, ratione animi veniam voluptates alias ullam praesentium voluptatibus et sed. Ea quae voluptas incidunt voluptatum veniam praesentium."
-                    />
-                    <ProjectCard
-                        image={svelte}
-                        title={'Slick Portfolio'}
-                        icon={gitLinkIcon}
-                        icon2={tsLogo}
-                        text="A Vercel-like developer portfolio website template made with Typescript and SvelteKit."
-                    />
+                    {PROJECTS_DATA.map(item => {
+                         return(
+                            <ProjectCard project={item} />
+                         )
+                        })
+                    }
+
+
+
                 </div>
-
-
-
             </div>
-
         </div>
     )
 }

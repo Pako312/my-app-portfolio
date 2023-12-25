@@ -5,7 +5,8 @@ import styles from './style.module.scss'
 const SkillCard = (props) => {
     const {
         label,
-        img
+        img, 
+      
     } = props;
 
     return (

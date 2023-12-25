@@ -3,8 +3,8 @@ import { useParams } from "react-router-dom";
 
 
 const DetailProject = () => {
-  const { slug } = useParams();
-  return (<div>Detail Project info - {slug}</div>);
+  const { id } = useParams();
+  return (<div>Detail Project info - {id}</div>);
 };
 
 export default DetailProject;
