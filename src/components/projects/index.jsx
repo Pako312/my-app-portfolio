@@ -17,18 +17,19 @@ export const Projects = () => {
             <div className={style['projectBox']}>
                 <SearchBar title="Projects" />
                 <div className={style['chipBox']}>
-                    <Chip asLink={'/skills/ts'} label="Typescript"
+                    <Chip asLink={'/skills/js'} label="Javascript"
                         icon={jsIcon}
                     />
-                    <Chip label="Sass" />
-                    <Chip label="Svelte" />
+                    <Chip asLink={'/skills/html'} label="HTML"
+                    />
+                    <Chip asLink={'/skills/css'} label="CSS" />
                 </div>
                 <div className={style['prjCards']}>
                     {PROJECTS_DATA.map(item => {
-                         return(
+                        return (
                             <ProjectCard project={item} />
-                         )
-                        })
+                        )
+                    })
                     }
 
 

@@ -10,7 +10,7 @@ const NavBar = () => {
                 <Link to={'/'}>
                     <div className={style.navItm_name}>
                         <i className={style['navIcon']}></i>
-                        Name LASTNAME
+                        Timur BAPIEV
                     </div>
                 </Link>
                 <Link to={'/skills'}>

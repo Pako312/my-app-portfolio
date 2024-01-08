@@ -57,12 +57,16 @@ const ProjectCard = (props) => {
             </div>
             {project.skills.map((skill, idx) => {
                 return (
-                    <ChipItm
-                        key={idx}
-                        label={skill.label}
-                        to={`/skills/`}
-                        icon={skill.image}
-                />
+                    <div className={styles['iconsBox']}>
+                        <ChipItm
+                            key={idx}
+                            label={skill.label}
+                            to={`/skills/${skill.slug}`}
+                            icon={skill.image}
+                            // className={styles['chip-icon']}
+                        />
+                    </div>
+
                 )
             })}
         </BoxLayout>

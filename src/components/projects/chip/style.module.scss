@@ -12,15 +12,17 @@
     transition-duration: .15s;
     user-select: none;
     color: $light-2;
+    text-decoration: none;
 
     .icon-wrap {
         width: 15px;
         height: 15px;
         margin-right: 8px;
-        img{
+
+        img {
             display: block;
-            width:100%;
-            height:100%;
+            width: 100%;
+            height: 100%;
             object-fit: contain;
         }
     }
@@ -36,7 +38,7 @@
 
 }
 
-.label{
+.label {
     display: flex;
     text-decoration: none;
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import style from './style.module.scss'
 import sass from '../assets/img/sass.png'
-import SkillsSlider from './skillsSlider'
+import { SkillsSlider } from './skillsSlider'
 import { ReactComponent as ArrowIcon } from '..///assets/img/strelka.svg'
 
 export const Home = () => {
@@ -9,7 +9,7 @@ export const Home = () => {
     <div className={style.container}>
       <div className={style.bodyBox}>
         <div className={style.textBox}>
-          <h1>Name LASTNAME</h1>
+          <h1>Timur Bapiev</h1>
           <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
             when an unknown printer took a galley of type and scrambled it to make a type specimen book.

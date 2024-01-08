@@ -13,6 +13,8 @@ export const Experiences = () => {
         <div className={styles['expCard_1']}>
           <ExperiencesCard />
         </div>
+        <div className='verticalLine'></div>
+
         <div className={styles['expCard_2']}>
           <ExperiencesCard />
         </div>

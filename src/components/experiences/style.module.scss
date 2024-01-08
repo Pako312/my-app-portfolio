@@ -2,6 +2,7 @@
 
 .expCard{
     display: grid;
+    position: relative;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 50px;
@@ -16,4 +17,16 @@
 }
 .expCard_3{
     grid-area: 3 / 1 / 4 / 2;
+}
+
+.verticalLine{
+    margin-top: 40px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    width: 0.5px;
+    height: 100%;
+    background: red;
+    z-index: -2;
+    display: flex;
 }

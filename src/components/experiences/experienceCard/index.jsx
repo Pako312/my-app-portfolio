@@ -27,7 +27,7 @@ const ExperiencesCard = () => {
                     </div>
                 </div>
             </BoxLayout>
-            <div className={styles['borderLine']}></div>
+            {/* <div className={styles['borderLine']}></div> */}
         </div>
     )
 }

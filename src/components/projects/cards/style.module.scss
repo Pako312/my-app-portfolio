@@ -80,3 +80,9 @@
         font-weight: 300;
     }
 }
+.iconsBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    // border: 1px solid red ;
+}
