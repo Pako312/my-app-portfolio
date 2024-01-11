@@ -19,6 +19,7 @@ export const PROJECTS_DATA = [
       SHORT_SKILL_BY_SLUG('html'),
       SHORT_SKILL_BY_SLUG('css'),
       SHORT_SKILL_BY_SLUG('react'),
+      
     ]
   },
   {
@@ -35,7 +36,7 @@ export const PROJECTS_DATA = [
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non dolores voluptatibus vitae praesentium aperiam, iure laboriosam repellendus sunt explicabo pariatur totam enim, nihil animi quisquam. Sit vero quod laborum!',
     skills: [
       SHORT_SKILL_BY_SLUG('js'),
-      SHORT_SKILL_BY_SLUG('ts'),
+      SHORT_SKILL_BY_SLUG('html'),
     ]
   } 
 ]

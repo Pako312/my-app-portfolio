@@ -82,7 +82,8 @@
 }
 .iconsBox{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    gap: 5px;
+    // flex-direction: row;
+    // justify-content: space-between;
     // border: 1px solid red ;
 }

@@ -1,5 +1,12 @@
 @import '../assets/styles/common.module.scss';
 
+
+
+
+.expCard{
+    display: flex;
+    position: relative;
+}
 .expCard{
     display: grid;
     position: relative;
@@ -19,14 +26,41 @@
     grid-area: 3 / 1 / 4 / 2;
 }
 
-.verticalLine{
-    margin-top: 40px;
-    position: absolute;
-    top: 0%;
-    left: 50%;
-    width: 0.5px;
-    height: 100%;
-    background: red;
-    z-index: -2;
-    display: flex;
-}
+.expCard {
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 30px 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .expCard_1 { grid-area: 1 / 1 / 2 / 2; }
+    .expCard_2 { grid-area: 2 / 3 / 3 / 4; }
+    .expCard_3 { grid-area: 3 / 1 / 4 / 2; }
+
+// .verticalLine{
+//     display: block;
+//     position: absolute;
+//     margin-left:15px;
+//     border-left: 1px solid red ;
+//     left: 20px;
+//     background-color: red;
+//     width: 5px;
+//     z-index: -2;
+    
+   
+// } 
+
+
+// .verticalLine{
+//     margin-top: 40px;
+//     position: absolute;
+//     top: 0%;
+//     left: 50%;
+//     width: 0.5px;
+//     height: 5px;
+//     background: red;
+//     z-index: -2;
+//     display: flex;
+// }

@@ -15,7 +15,7 @@ const parentEl = ({ to, label, children, icon }) => {
             className={clsx(styles['chip-icon'], styles['cursor-help'])}
             data-label={label}
         >
-            {children}
+            {label}
         </span>
     )
 }
@@ -31,7 +31,7 @@ const ChipItm = (props) => {
     } = props
     return (
         <div>
-            <parentEl label={label}
+            <parentEl data-label={label}
                 to={to}
                 className={clsx(styles['chip-icon'], styles['cursor-help'])}
             >
